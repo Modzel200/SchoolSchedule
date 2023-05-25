@@ -111,7 +111,7 @@ def algorytm_genetyczny(liczba_iteracji, rozmiar_populacji, prawdopodobienstwo_m
 #wypisanie końcowego planu
 def wypisz_plan(plan_zajec):
     for x in range(liczba_klas):
-        print("Plan klasy: "+str(x))
+        print("Plan klasy: "+str(x+1))
         for y in range(0,liczba_dni*liczba_godzin_dziennie,liczba_godzin_dziennie):
             print(plan_zajec[x][y:y+liczba_godzin_dziennie])
 
