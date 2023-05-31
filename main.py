@@ -6,7 +6,7 @@ liczba_dni = 2
 liczba_godzin_dziennie = 3
 
 # Definicja zajęć
-zajecia = ['Matematyka', 'Fizyka', 'Chemia', 'Historia','null']
+zajecia = ['Matematyka', 'Fizyka', 'Chemia', 'Historia','okienko']
 
 # Funkcja celu - ocena planu zajęć
 def ocena_planu(plan):
@@ -20,7 +20,7 @@ def ocena_planu(plan):
     for x in range(liczba_klas):
         list = []
         for y in range(liczba_dni*liczba_godzin_dziennie):
-            if(plan[x][y]!='null'):
+            if(plan[x][y]!='okienko'):
                 if(plan[x][y] in list):
                     ocena-=1
                 else:
@@ -34,14 +34,14 @@ def ocena_planu(plan):
     for x in range(liczba_klas):
         for y in range(liczba_dni*liczba_godzin_dziennie):
             if(y%liczba_godzin_dziennie!=0):
-                if(plan[x][y]=='null'):
-                    if(plan[x][y-1]!='null'):
+                if(plan[x][y]=='okienko'):
+                    if(plan[x][y-1]!='okienko'):
                         new_tmp=y
                         while True:
                             new_tmp+=1
                             if(new_tmp%liczba_godzin_dziennie==0):
                                 break
-                            if(plan[x][new_tmp]!='null'):
+                            if(plan[x][new_tmp]!='okienko'):
                                 ocena-=1
                                 break
     #brak możliwości aby jeden przedmiot był nauczany w tym samym czasie
