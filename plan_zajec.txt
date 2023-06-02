@@ -1,0 +1,30 @@
+Plan dla klasy: 1
+Poniedzia³ek
+8:00-8:45 Chemia
+8:55-9:40 Fizyka
+9:50-10:35 Historia
+Wtorek
+8:00-8:45
+8:55-9:40
+9:50-10:35 Matematyka
+
+Plan dla klasy: 2
+Poniedzia³ek
+8:00-8:45
+8:55-9:40 Historia
+9:50-10:35 Fizyka
+Wtorek
+8:00-8:45 Matematyka
+8:55-9:40 Chemia
+9:50-10:35
+
+Plan dla klasy: 3
+Poniedzia³ek
+8:00-8:45 Matematyka
+8:55-9:40
+9:50-10:35
+Wtorek
+8:00-8:45 Chemia
+8:55-9:40 Historia
+9:50-10:35 Fizyka
+
